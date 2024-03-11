@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    width: 100vw;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.drop-area{
+    border: 2px dashed #ddd;
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+    
+.drop-area.active{
+    background-color: #ddd;
+    color: #000000;
+    border: 2px dashed blue;
+}
+    
+.drop-area button{
+    background-color: blue;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-align:center;
+    border:0px;
+    border-radius: 4px;
+    cursor: pointer;
+    border:2px solid blue;
+}
+    
+.drop-area button:hover{
+    background-color: transparent;
+    color: blue;
+}
+
+.previewImage{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.previewImage img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+    
+.previewImage .removeBtn{
+    background-color: rgb(179, 14, 14);
+    border-radius: 100%;
+    font-size: 15px;
+    padding: 1px;
+    color: #fff;
+    border: 2px solid rgb(146, 10, 10);
+    margin-left: 40px;
+    cursor: pointer;
+}
+    
+.previewImage .removeBtn:hover{
+    background-color:transparent;
+    color:rgb(156, 15, 15);
+    }
